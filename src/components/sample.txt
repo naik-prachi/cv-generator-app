@@ -1,0 +1,31 @@
+ <table>
+        <tbody>
+          {/* Personal Information */}
+          <tr>
+            <th>Personal Information:</th>
+            <td>
+              <p><strong>{personalInfo.fullName}</strong></p>
+              <p>Email: {personalInfo.email}</p>
+              <p>Phone: {personalInfo.phone}</p>
+            </td>
+          </tr>
+
+          {/* Education */}
+          <tr>
+            <th>Education:</th>
+            <td>{education}</td>
+          </tr>
+
+          {/* Work Experience */}
+          <tr>
+            <th>Work Experience:</th>
+            <td colSpan="2">{experience}</td>
+          </tr>
+
+          {/* Skills */}
+          <tr>
+            <th>Skills:</th>
+            <td colSpan="2">{skills}</td>
+          </tr>
+        </tbody>
+      </table>

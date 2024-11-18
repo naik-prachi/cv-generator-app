@@ -2,16 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -24,15 +14,137 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.data-filling {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h1 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+
+label {
+  font-size: large;
+}
+
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 8px;
+  font-size: inherit;
+}
+
+.txt {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+button {
+  margin: 30px;
+  padding: 7px 16px;
+  font-size: inherit;
+  cursor: pointer;
+  background-color: rgb(17, 164, 170);
+  color: #282c34;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: rgb(97, 223, 227);
+}
+
+.col {
+  margin-top: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  form {
+    grid-template-columns: 1fr;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+h2 {
+  text-align: center;
+  font-size: x-large;
+  margin-top: 80px;
+  opacity: .8;
+}
+
+.label-info {
+  font-style: italic;
+  opacity:  .5;
+  font-size: medium;
+}
+
+.cv-display {
+  display: flex;
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.cv-border {
+  /* flex: 1; */
+  background-color: #007bff;
+  color: #fff;
+  padding: 1px;
+  /* size: 20px; */
+  width: 520px;
+  height: 800px;
+}
+
+
+.cv-left-column {
+  flex: 1;
+  text-align: justify;
+  /* background-color: #007bff; */
+  color: #fff;
+  /* padding: 20px; */
+  margin: 3px;
+  width: 197px;
+}
+
+.cv-right-column {
+  flex: 2;
+  padding-left: 10px;
+  text-align: justify;
+  /* size: 20; */
+  /* height: max-content; */
+  background-color: azure;
+  color: #007bff;
+  height: 780px;
+  width: 290px;
+}
+
+
+.cv-section {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: medium;
+  margin-top: 0%;
+}
+
+h5 {
+  margin-top: 80px;
 }
